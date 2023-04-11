@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoADONET2023", "DemoADONET2023\DemoADONET2023.csproj", "{D15C4FF7-37DB-4A0B-A5E1-E46BE9ED1252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{4BA5B031-6DF7-46AA-8BE4-7C704FF0288A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D15C4FF7-37DB-4A0B-A5E1-E46BE9ED1252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D15C4FF7-37DB-4A0B-A5E1-E46BE9ED1252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D15C4FF7-37DB-4A0B-A5E1-E46BE9ED1252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D15C4FF7-37DB-4A0B-A5E1-E46BE9ED1252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA5B031-6DF7-46AA-8BE4-7C704FF0288A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA5B031-6DF7-46AA-8BE4-7C704FF0288A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA5B031-6DF7-46AA-8BE4-7C704FF0288A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA5B031-6DF7-46AA-8BE4-7C704FF0288A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C65F0F6-3BDC-41F0-BC85-32F6D63FF9A9}
+	EndGlobalSection
+EndGlobal
