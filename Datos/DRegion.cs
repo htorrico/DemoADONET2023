@@ -10,6 +10,9 @@ namespace Datos
 {
     public class DRegion
     {
+        private string connectionString= "Data Source=HUGO-PC\\SQLEXPRESS;Initial Catalog=CAVV_MonitoreoViolencia;Integrated Security=True;";
+
+       
         public   List<Region> Listar()
         {
 
@@ -20,7 +23,7 @@ namespace Datos
             List<Region> regiones = null;
             try
             {
-                connection = new SqlConnection("Data Source=HUGO-PC\\SQLEXPRESS;Initial Catalog=CAVV_MonitoreoViolencia;Integrated Security=True;");
+                connection = new SqlConnection(connectionString);
 
                 connection.Open();
 
@@ -74,5 +77,32 @@ namespace Datos
 
 
         }
+
+        public void Insertar(Region region)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("USP_InsRegion", connection); // Nombre del procedimiento almacenado
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Parámetros del procedimiento almacenado                
+                    command.Parameters.AddWithValue("@RegionID", region.IdRegion);
+                    command.Parameters.AddWithValue("@Code", region.Code);
+                    command.Parameters.AddWithValue("@Description", region.Description);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
+        }
+
     }
 }
